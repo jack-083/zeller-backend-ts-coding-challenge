@@ -8,7 +8,7 @@
   "scripts": {
     "build": "tsc",
     "debug": "NODE_PATH=src ts-node-dev --files --inspect --respawn src/index.ts",
-    "start": "NODE_PATH=./dist NODE_ENV=production node dist",
+    "start": "NODE_PATH=./dist/src NODE_ENV=production node dist/src",
     "test": "jest",
     "test:watch": "jest --watch"
   },
