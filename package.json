@@ -1,0 +1,23 @@
+{
+  "name": "zeller-code-challenge",
+  "version": "1.0.0",
+  "description": "Zeller code challenge",
+  "main": "src/app.ts",
+  "author": "Jack Wang",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "debug": "NODE_PATH=src ts-node-dev --files --inspect --respawn src/index.ts",
+    "start": "NODE_PATH=./dist NODE_ENV=production node dist",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "@types/node": "^17.0.25",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.6.3"
+  }
+}
